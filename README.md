@@ -8,7 +8,7 @@ Ce projet multidisciplinaire intègre des concepts avancés d'**Intelligence Art
 
 ---
 
-## 📑 Sommaire du github (Architecture du Projet)
+##  Sommaire du github (Architecture du Projet)
 
 Ce répertoire est divisé en 4 parties distinctes. Chacune possède son propre sous-répertoire contenant le code source et une documentation technique détaillée.
 
@@ -34,7 +34,7 @@ La version numérique du projet. Un environnement de simulation physique permett
 
 ---
 
-## ⚙️ Spécifications Matérielles Générales (Hardware)
+##  Spécifications Matérielles Générales (Hardware)
 
 Le système physique repose sur l'architecture matérielle suivante :
 
