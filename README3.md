@@ -46,10 +46,10 @@ $$X = (c - 1) \pmod{3} + 1$$
 
 ## 3. Logique de Contrôle (Machine à États)
 
-Le comportement du robot est régi par une machine à états finis (`etatActuel`), garantissant une séparation stricte des axes de déplacement pour minimiser l'erreur odométrique.
+Le comportement du robot est régi par une machine à états finis (`etatActuel`), permettant une séparation stricte des axes de déplacement pour minimiser l'erreur odométrique.
 
-* **État 1 (Avancée Longitudinale) :** Le robot se déplace sur l'axe Y (vers l'avant). Un régulateur de type Proportionnel (P) agit sur l'axe X pour maintenir le cap. Le système compte les intersections horizontales jusqu'à atteindre la rangée cible.
-* **État 2 (Translation Latérale / Glissade) :** Déplacement exclusif sur l'axe X (gauche/droite). Le régulateur P bascule sur l'axe Y pour garantir le maintien sur la rangée en cours. Le système compte les intersections verticales.
+* **État 1 (Avancée Longitudinale) :** Le robot se déplace sur l'axe Y (vers l'avant). Un régulateur de type Proportionnel (P) agit sur l'axe X pour que le robot conserve la bonne trajectoire. Le système compte les intersections horizontales jusqu'à atteindre la rangée cible.
+* **État 2 (Translation Latérale / Glissade) :** Déplacement seulement sur l'axe X (gauche/droite). Le régulateur P agit sur l'axe Y pour garantir le maintien sur la rangée en cours. Le système compte les intersections verticales.
 * **État 3 (Arrêt et Positionnement) :** Les consignes de vitesse de l'ensemble des moteurs sont ramenées à zéro. La cible est atteinte.
 
 ---
