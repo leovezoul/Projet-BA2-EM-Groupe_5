@@ -63,4 +63,4 @@ Pour compiler les codes des dossiers `1`, `2` et `3`, installez les dépendances
 ### Démarrage Rapide
 1. Clonez ce répertoire sur votre machine locale :
    ```bash
-   git clone [https://github.com/VOTRE_NOM_UTILISATEUR/TicTacToe-Mecanum-Robot.git](https://github.com/VOTRE_NOM_UTILISATEUR/Projet-BA2-EM-Groupe_5-Robot.git)
+   git clone [https://github.com/VOTRE_NOM_UTILISATEUR/TicTacToe-Mecanum-Robot.git](https://github.com/VOTRE_NOM_UTILISATEUR/Projet-BA2-EM-Groupe_5.git)
