@@ -27,7 +27,7 @@ Le code de la station de contrôle au sol. Ce micrologiciel transforme un Arduin
 * **Technologies :** C++ (Arduino), Protocole SPI, Transceiver nRF24L01 (Auto-ACK).
 
 ### 🖥️ 4. [Simulation Environnementale (CoppeliaSim)](./4_Simulation)
-Le jumeau numérique du projet. Un environnement de simulation physique permettant de valider les algorithmes de routage et la logique de contrôle de la machine à états avant le déploiement sur le matériel réel.
+La version numérique du projet. Un environnement de simulation physique permettant de valider les algorithmes et la logique de contrôle de la machine à états avant leur utilisation sur le matériel réel.
 * **Technologies :** Lua, CoppeliaSim / V-REP, Modélisation cinématique (Configuration en croix '+'), Capteurs virtuels de vision.
 
 
