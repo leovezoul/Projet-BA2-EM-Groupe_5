@@ -12,21 +12,21 @@ Ce projet multidisciplinaire intègre des concepts avancés d'**Intelligence Art
 
 Ce répertoire est divisé en 4 parties distinctes. Chacune possède son propre sous-répertoire contenant le code source et une documentation technique détaillée.
 
-### 1. [Mode autonome avec IA Minimax](./1_Code avec minimax)
+### 1. [Mode autonome avec IA Minimax](./Code_avec_minimax)
 Le "cerveau" complet du robot. Dans ce mode, le système calcule le coup mathématiquement parfait grâce à l'algorithme récursif **Minimax**. Il écoute le coup de l'adversaire par radio, détermine sa réponse, et exécute physiquement la trajectoire pour aller marquer la grille avec son un stylo.
 * **Technologies :** C++ (Arduino), Arbre de décision Minimax, Régulation PID.
 
 
 
-###  2. [Mode esclave avec instructions](./2_Robot_commandé)
+###  2. [Mode esclave avec instructions](./Code_sans_minimax)
 Une version allégée du micrologiciel embarqué. L'IA est désactivée pour transformer le robot en une unité d'exécution pure. Il attend la réception d'une coordonnée (1 à 9) via radio et exécute la trajectoire physique correspondante. Idéal pour les tests d'étalonnage cinématique et lorsqu'on le robot doit aller sur une case spécifique
 * **Technologies :** C++ (Arduino), Machine à états finis, Matrices de capteurs optiques.
 
-### 3. [Code de communication du PC](./3_communication_PC)
+### 3. [Code de communication du PC](./Communication)
 Le code de la station de contrôle au sol. Ce micrologiciel transforme un Arduino relié en USB à un ordinateur en un pont de communication (Bridge UART/RF). Il permet à un humain d'envoyer des commandes chiffrées au robot depuis le Moniteur Série.
 * **Technologies :** C++ (Arduino), Protocole SPI, Transceiver nRF24L01 (Auto-ACK).
 
-### 4. [Simulation Environnementale (CoppeliaSim)](./4_Simulation)
+### 4. [Simulation Environnementale (CoppeliaSim)](./Simulation)
 La version numérique du projet. Un environnement de simulation physique permettant de valider les algorithmes et la logique de contrôle de la machine à états avant le déploiement sur le matériel réel.
 * **Technologies :** Lua, CoppeliaSim / V-REP, Modélisation cinématique (Configuration en croix '+'), Capteurs virtuels de vision.
 
