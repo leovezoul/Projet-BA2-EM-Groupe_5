@@ -1,1 +1,1 @@
-# Projet-BA2-lectrom-canique
+# Projet-BA2-EM-Groupe_5
