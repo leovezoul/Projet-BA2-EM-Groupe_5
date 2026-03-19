@@ -2,9 +2,9 @@
 
 ## 1. Description du Projet
 
-Ce répertoire contient le code source permettant au robot d'agir comme une unité d'exécution physique télécommandée. Contrairement au module autonome, l'intelligence décisionnelle (Minimax) est ici désactivée. Le robot opère en mode "écoute passive" : il attend la réception d'un index de case (1 à 9) via une liaison RF pour déclencher une séquence de mouvement prédéfinie.
+Ce répertoire contient le code source permettant au robot d'agir comme une unité d'exécution physique télécommandée. Contrairement au module avec l'intelligence décisionnelle (Minimax), il attend la réception d'un index de case (1 à 9) via une liaison RF pour ensuite se rendre sur la case recue. 
 
-Ce module est idéal pour les phases de test de la partie cycle (moteurs) et de la précision de l'asservissement optique (capteurs de ligne).
+Ce code permet de tester le déplacement du robot en lui donnant l'ordre d'aller sur la case souhaitée. Cette fonctionnalité est également utile dans le cadre de l'évaluation du robot nécéssitant que celui-ci aille à différentes cases prédéfinies. 
 
 ## 2. Architecture et Logique de Fonctionnement
 
