@@ -12,13 +12,13 @@ Ce projet multidisciplinaire intègre des concepts avancés d'**Intelligence Art
 
 Ce répertoire est divisé en 4 parties distinctes. Chacune possède son propre sous-répertoire contenant le code source et une documentation technique détaillée.
 
-### 1. [Mode Autonome avec IA Minimax](./1_Robot_IA_Minimax)
+### 1. [Mode autonome avec IA Minimax](./1_Code avec minimax)
 Le "cerveau" complet du robot. Dans ce mode, le système calcule le coup mathématiquement parfait grâce à l'algorithme récursif **Minimax**. Il écoute le coup de l'adversaire par radio, détermine sa réponse, et exécute physiquement la trajectoire pour aller marquer la grille avec son un stylo.
 * **Technologies :** C++ (Arduino), Arbre de décision Minimax, Régulation PID.
 
 
 
-###  2. [Mode Esclave avec instructions](./2_Robot_commandé)
+###  2. [Mode esclave avec instructions](./2_Robot_commandé)
 Une version allégée du micrologiciel embarqué. L'IA est désactivée pour transformer le robot en une unité d'exécution pure. Il attend la réception d'une coordonnée (1 à 9) via radio et exécute la trajectoire physique correspondante. Idéal pour les tests d'étalonnage cinématique et lorsqu'on le robot doit aller sur une case spécifique
 * **Technologies :** C++ (Arduino), Machine à états finis, Matrices de capteurs optiques.
 
