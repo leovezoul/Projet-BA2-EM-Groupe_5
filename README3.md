@@ -1,10 +1,10 @@
-# Documentation Technique - Simulateur de Navigation Autonome (Tic-Tac-Toe)
+# Documentation Technique - Simulateur de Navigation Autonome (OXO)
 
-Ce module Lua implémente la logique de contrôle et de navigation d'un robot omnidirectionnel (configuration en croix '+') au sein d'un environnement de simulation physique (type CoppeliaSim / V-REP). Le système permet au robot de se déplacer de manière autonome sur une grille cartésienne pour atteindre une case cible (de 1 à 9), en s'appuyant sur un réseau de capteurs optiques et une régulation PID.
+Ce module Lua implémente la logique de contrôle et de navigation d'un robot omnidirectionnel (configuration en croix '+') au sein d'un environnement de simulation physique (type CoppeliaSim / V-REP). Le système permet au robot de se déplacer de manière autonome sur une grille pour atteindre une case cible (de 1 à 9), en s'appuyant sur un réseau de capteurs optiques et un correcteur proportionnel P.
 
 ## 1. Architecture Matérielle Virtuelle
 
-Le script requiert la présence des actionneurs et capteurs suivants dans la hiérarchie de la scène (les handles sont récupérés dynamiquement au lancement) :
+Le script requiert la présence des actionneurs et capteurs suivants dans la hiérarchie de la scène :
 
 ### 1.1. Actionneurs (Joints)
 La cinématique omnidirectionnelle est assurée par 4 roues motorisées indépendantes :
